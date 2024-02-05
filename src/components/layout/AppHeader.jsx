@@ -38,7 +38,7 @@ export default function AppHeader() {
   return (
     <Layout.Header style={headerStyle}>
       <Select
-        style={{ width: 250 }}
+        style={{ width: 240 }}
         open={select}
         onSelect={handleSelect}
         onClick={() => setSelect((prev) => !prev)}
@@ -51,7 +51,7 @@ export default function AppHeader() {
         optionRender={(option) => (
           <Space>
             <img
-              style={{ width: 20 }}
+              style={{ width: 24 }}
               src={option.data.icon}
               alt={option.data.label}
             />{" "}
@@ -68,7 +68,7 @@ export default function AppHeader() {
       </Modal>
 
       <Drawer
-        width={600}
+        width={580}
         title="Add Asset"
         onClose={() => setDrawer(false)}
         open={drawer}

@@ -4,7 +4,7 @@ import CoinInfo from "./CoinInfo";
 export default function CoinInfoModal({ coin }) {
   return (
     <>
-      <CoinInfo coin={coin} withSymbol/>
+      <CoinInfo coin={coin} withSymbol />
       <Divider />
       <Typography.Paragraph>
         <Typography.Text strong>1 hour: </Typography.Text>
@@ -32,10 +32,12 @@ export default function CoinInfoModal({ coin }) {
         <Typography.Text strong>Market Cap: </Typography.Text>
         {coin.marketCap}$
       </Typography.Paragraph>
-      {coin.contactAddress && <Typography.Paragraph>
-        <Typography.Text strong>Contract Address: </Typography.Text>
-        {coin.contractAddress}
-      </Typography.Paragraph>}
+      {coin.contractAddress && (
+        <Typography.Paragraph>
+          <Typography.Text strong>Contract Address: </Typography.Text>
+          {coin.contractAddress}
+        </Typography.Paragraph>
+      )}
     </>
   );
 }
