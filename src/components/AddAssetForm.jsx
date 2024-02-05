@@ -1,8 +1,6 @@
 import {
   Select,
   Space,
-  Typography,
-  Flex,
   Divider,
   Form,
   InputNumber,
@@ -150,7 +148,7 @@ export default function AddAssetForm({ onClose }) {
 
       <Form.Item>
         <Button type="primary" htmlType="submit">
-          Add Asset
+          Submit
         </Button>
       </Form.Item>
     </Form>
